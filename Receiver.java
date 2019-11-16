@@ -1,3 +1,11 @@
+/*
+ * Name: Alfath Zikir
+ * UCID: 30027320
+ * Assignment 3
+ * Class: Receiver
+ **/
+
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -18,20 +26,7 @@ public class Receiver extends Thread {
 	private static ServerSocket serverSocket;
 	private static Socket socket;
 	
-/*	public Receiver(int port) {
-		
-		
-		serverSocket = null;
-		try {
-			serverSocket = new ServerSocket(PORT);
-		    serverSocket.setSoTimeout(200000);
-		} catch (IOException e) {
 
-			System.err.println("Port " + port + " failed.");
-		}
-
-
-	}*/
 	
 	public static void main (String[] args) {
 		
@@ -73,38 +68,9 @@ public class Receiver extends Thread {
 				System.err.println("Connection failed.");
 			}
 				
-	}
+		}
 	
-/*	// Receives file from Sender, builds an object from it and inspect it.
-	public void run() {
-		
-	
-		
-		while (true) {
-			
-			System.out.println("Server running on " + serverSocket.getLocalPort());
-			File file = new File(fileName);
-			
-			try {
-				socket = serverSocket.accept();
-				System.out.println("Connected with client");
-				
-				receiveFile(file, socket);
-				Object object = buildObjectFromFile(file);
-				
-				// Visualize object
-				System.out.println("=======================================================================");
-				Inspector inspector = new Inspector();
-				inspector.inspect(object, false);
-				System.out.println("=======================================================================\n");
-				
-			}catch (IOException e) {
-				System.err.println("Connection failed.");
-			}
-			
 
-		}*/
-		
 	}
 	
 	// A method that builds an object from a file by deserializing XML document with SAXBuilder

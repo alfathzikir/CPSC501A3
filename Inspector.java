@@ -1,5 +1,9 @@
-// NAME: ALFATH ZIKIR
-// UCID: 30027320
+/*
+ * Name: Alfath Zikir
+ * UCID: 30027320
+ * Assignment 3
+ * Class: Inspector
+ **/
 
 
 import java.lang.reflect.*;

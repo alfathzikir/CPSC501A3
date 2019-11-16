@@ -1,3 +1,11 @@
+/*
+ * Name: Alfath Zikir
+ * UCID: 30027320
+ * Assignment 3
+ * Class: Serializer
+ **/
+
+
 import java.lang.reflect.*;
 import java.util.*;
 
